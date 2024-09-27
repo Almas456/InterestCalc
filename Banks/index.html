@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings & FD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">InterestCalc</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#savings-calculator">Savings Calculator</a></li>
+                <li><a href="#fd-calculator">FD Calculator</a></li>
+                <li><a href="#faq-section">FAQ</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Savings Calculator Section -->
+    <div id="savings-calculator" class="calculator-container">
+        <h1>Savings Interest Calculator</h1>
+        <form id="interestForm">
+            <label for="principal">Principal Amount (₹):</label>
+            <input type="number" id="principal" required>
+
+            <label for="rate">Interest Rate (% per annum):</label>
+            <input type="number" id="rate" value="3.50" step="0.5" required>
+
+            <label for="time">Time Period (Years):</label>
+            <input type="number" id="time" required>
+
+            <button type="button" onclick="calculateSavingsInterest()">Calculate Interest</button>
+            <div id="savingsResult"></div>
+        </form>
+    </div>
+
+    <!-- FD Calculator Section -->
+    <div id="fd-calculator" class="calculator-container">
+        <h1>FD Interest Calculator</h1>
+        <form id="fdForm">
+            <label for="fdPrincipal">Principal Amount (₹):</label>
+            <input type="number" id="fdPrincipal" required>
+
+            <label for="fdRate">Interest Rate (% per annum):</label>
+            <input type="number" id="fdRate" value="5.50" step="0.5" required>
+
+            <label for="fdTime">Time Period (Years):</label>
+            <input type="number" id="fdTime" required>
+
+            <button type="button" onclick="calculateFDInterest()">Calculate FD Interest</button>
+            <div id="fdResult"></div>
+        </form>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq-section" class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <button class="faq-question">1. How is interest calculated on savings accounts?</button>
+            <div class="faq-answer">
+                <p>Interest is calculated based on the daily closing balance. The formula used is: Interest = Principal × Rate × Time / 100.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">2. What is the average interest rate in India?</button>
+            <div class="faq-answer">
+                <ul>
+                    <li><b>ICICI Bank</b>: 3.00%</li>
+                    <li><b>HDFC Bank</b>: 3.00% - 3.50%</li>
+                    <li><b>Axis Bank</b>: 3.00% - 3.50%</li>
+                    <li><b>Bank of Baroda</b>: 2.75% - 3.35%</li>
+                    <li><b>IDFC First Bank</b>: 3.50% - 4.00%</li>
+                    <li><b>Kotak Mahindra Bank</b>: 3.50% - 4.00%</li>
+                    <li><b>Bank of India</b>: 2.75% - 2.90%</li>
+                    <li><b>RBL Bank</b>: 4.25% - 6.75%</li>
+                    <li><b>IndusInd Bank</b>: 3.50% - 6.00%</li>
+                    <li><b>Punjab National Bank (PNB)</b>: 2.70% - 3.10%</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">3. What factors affect savings account interest rates?</button>
+            <div class="faq-answer">
+                <p>Factors such as RBI regulations, economic environment, and bank policies affect the interest rate on savings accounts.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">4. Can I withdraw my money anytime from a savings account?</button>
+            <div class="faq-answer">
+                <p>Yes, you can withdraw money anytime from a savings account, but maintaining a minimum balance is often required.</p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="faq-question">5. Do banks charge any fees on savings accounts?</button>
+            <div class="faq-answer">
+                <p>Banks may charge fees for non-maintenance of minimum balance, ATM transactions beyond free limits, etc.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" class="contact-container">
+        <p>If you would like to create such a website or need help, <span class="animated-text">contact us now!</span></p>
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

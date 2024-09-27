@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #3fcd32;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto;
+    color: #fff;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #3fcd32;
+    border-radius: 4px;
+}
+
+/* Calculator Section Styling */
+.calculator-container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.calculator-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3fcd32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3fcd32;
+}
+
+/* FAQ Section Styling */
+.faq-container {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 10px;
+    background-color: #3fcd32;
+    border: none;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.faq-answer-visible {
+    display: block;
+}
+
+/* Contact Section Styling */
+.contact-container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.animated-text {
+    font-weight: bold;
+    animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+    0% {
+        color: #3fcd32;
+    }
+    50% {
+        color: #3fcd32;
+    }
+    100% {
+        color: #3fcd32;
+    }
+}
+
+
+
+
+
